@@ -138,9 +138,9 @@ body {
   /* background-image: url("https://wallpaperaccess.com/full/162342.jpg"); */
   /* background-image: url("https://i.pinimg.com/originals/40/38/81/4038814f753e6fe214a3b53f2262dab0.jpg"); */
   background-image: url("https://i.pinimg.com/originals/a6/2e/c7/a62ec7093f912a1df885fcf4d9218b58.jpg");
-  max-width:100%;
-  height:auto;
-  max-height:100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
 }
 
 /* ****************************************************
@@ -224,6 +224,33 @@ body {
   justify-content: center;
   align-items: center;
   margin: 5px;
+  /* shake animation */
+  animation-duration: 0.82s;
+  animation-iteration-count: infinite;
+  animation-name: shake;
+  transform: translate3d(0, 0, 0);
+}
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
 }
 
 /* ****************************************************
@@ -318,7 +345,7 @@ body {
 #reset {
   font-family: "Creepster", cursive;
   font-size: 20px;
-  opacity: .8;
+  opacity: 0.8;
   width: 20%;
   height: 20%;
   color: white;
@@ -329,4 +356,18 @@ body {
   justify-content: center;
   align-items: center;
   margin: auto;
+
+/* fadeIn animation */
+animation-name: fadeIn;
+animation-duration: 5s;
+animation-iteration-count: infinite;
 }
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+

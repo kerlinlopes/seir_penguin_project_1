@@ -42,6 +42,12 @@ Adding animations
   ```
 ```animation-timing-function:```Defines how the values between the start and the end of the animation are calculated.
 ```step-start``` value made it jump instantly to its final state
+```js
+/* fadeIn animation */
+animation-name: fadeIn;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+```
 
 #### Things I changed
 ```js
