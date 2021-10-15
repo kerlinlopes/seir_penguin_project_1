@@ -138,9 +138,12 @@ body {
   /* background-image: url("https://wallpaperaccess.com/full/162342.jpg"); */
   /* background-image: url("https://i.pinimg.com/originals/40/38/81/4038814f753e6fe214a3b53f2262dab0.jpg"); */
   background-image: url("https://i.pinimg.com/originals/a6/2e/c7/a62ec7093f912a1df885fcf4d9218b58.jpg");
-  max-width: 100%;
+  /* max-width: 100%;
   height: auto;
-  max-height: 100%;
+  max-height: 100%; */
+  /* object-fit: contain; */
+  /* background-repeat: no-repeat; */
+  background-size: cover;
 }
 
 /* ****************************************************
