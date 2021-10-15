@@ -159,7 +159,7 @@ body {
   margin: 10px auto;
   border-radius: 25px;
   /* shake animation */
-  animation-duration: 0.82s;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-name: shake;
   transform: translate3d(0, 0, 0);
@@ -225,7 +225,7 @@ body {
   align-items: center;
   margin: 5px;
   /* shake animation */
-  animation-duration: 0.82s;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-name: shake;
   transform: translate3d(0, 0, 0);
