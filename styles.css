@@ -1,0 +1,331 @@
+/* ****************************************************
+** HEADING
+**************************************************** */
+@media only screen and (max-width: 320px) {
+}
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  font-family: "Creepster", cursive;
+  /* flickering animation */
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: flickering;
+}
+@keyframes flickering {
+  0% {
+    color: red;
+    text-shadow: none;
+    transform: skewX(0);
+  }
+  5% {
+    color: red;
+    text-shadow: none;
+    transform: skewX(0);
+  }
+  10% {
+    color: red;
+    text-shadow: 1px 1px #eee;
+    transform: skewX(-15deg);
+  }
+  15% {
+    color: #ccc;
+    text-shadow: none;
+    transform: skewX(-15deg);
+  }
+  20% {
+    color: red;
+    text-shadow: none;
+    transform: skewX(0);
+  }
+  25% {
+    color: #ccc;
+    text-shadow: 2px 2px #912914;
+    transform: skewX(0);
+  }
+  30% {
+    color: #ccc;
+    text-shadow: 2px 2px #912914;
+    transform: skewX(0);
+  }
+  35% {
+    color: #ccc;
+    text-shadow: 2px 2px #912914;
+    transform: skewX(0);
+  }
+  37% {
+    color: #ccc;
+    text-shadow: 1px 1px #eee;
+    transform: skewX(0);
+  }
+  40% {
+    color: red;
+    text-shadow: 1px 1px #eee;
+    transform: skewX(0);
+  }
+  45% {
+    color: red;
+    text-shadow: 1px 1px #eee;
+    transform: skewX(0);
+  }
+  50% {
+    color: red;
+    text-shadow: none;
+    transform: skewX(0);
+  }
+  55% {
+    color: red;
+    text-shadow: none;
+    transform: skewX(0);
+  }
+  60% {
+    color: red;
+    text-shadow: none;
+    transform: skewX(0);
+  }
+  65% {
+    color: red;
+    text-shadow: none;
+    transform: skewX(0);
+  }
+  68% {
+    color: red;
+    text-shadow: 1px 1px #eee;
+    transform: skewX(0);
+  }
+  70% {
+    color: red;
+    text-shadow: 1px 1px #eee;
+    transform: skewX(0);
+  }
+  75% {
+    color: red;
+    text-shadow: 1px 1px #eee;
+    transform: skewX(10deg);
+  }
+  80% {
+    color: red;
+    text-shadow: 1px 1px #eee;
+    transform: skewX(10deg);
+  }
+  85% {
+    color: red;
+    text-shadow: 1px 1px #eee;
+    transform: skewX(10deg);
+  }
+  90% {
+    color: red;
+    text-shadow: none;
+    transform: skewX(0);
+  }
+  95% {
+    color: red;
+    text-shadow: 1px 1px #eee;
+    transform: skewX(0);
+  }
+  100% {
+    color: red;
+    text-shadow: none;
+    transform: skewX(0);
+  }
+}
+
+/* ****************************************************
+** BODY
+**************************************************** */
+body {
+  /* background-image: url("https://wallpaperaccess.com/full/162342.jpg"); */
+  /* background-image: url("https://i.pinimg.com/originals/40/38/81/4038814f753e6fe214a3b53f2262dab0.jpg"); */
+  background-image: url("https://i.pinimg.com/originals/a6/2e/c7/a62ec7093f912a1df885fcf4d9218b58.jpg");
+  background-position: center;
+  object-fit: contain;
+}
+
+/* ****************************************************
+** QUESTIONS
+**************************************************** */
+#question {
+  font-family: "Creepster", cursive;
+  text-align: center;
+  width: 70%;
+  padding: 30px;
+  border: 3px solid red;
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+  font-size: 28px;
+  margin: 10px auto;
+  border-radius: 25px;
+  /* shake animation */
+  animation-duration: 0.82s;
+  animation-iteration-count: infinite;
+  animation-name: shake;
+  transform: translate3d(0, 0, 0);
+}
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+/* ****************************************************
+** ANSWERS
+**************************************************** */
+#answer {
+  width: 50%;
+  color: white;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+#answer ul {
+  border-radius: 25px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+}
+
+#answer ul li {
+  font-family: "Creepster", cursive;
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
+  opacity: 0.8;
+  border-radius: 25px;
+  border: 3px solid red;
+  background-color: black;
+  width: 110px;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+
+/* ****************************************************
+** SCORE BOARD
+**************************************************** */
+#scores {
+  border-radius: 25px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 10px auto;
+  /* glitch animation */
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-name: glitch;
+  animation-timing-function: step-start;
+}
+@keyframes glitch {
+  0% {
+    transform: none;
+    opacity: 0.3;
+  }
+  5% {
+    color: white;
+    transform: translate(-2px, -3px);
+    opacity: 0.5;
+  }
+  10% {
+    transform: none;
+    opacity: 0.7;
+  }
+  25% {
+    color: white;
+    transform: none;
+    opacity: 0.3;
+  }
+  30% {
+    transform: translate(-5px, -2px);
+    opacity: 0.5;
+  }
+  35% {
+    color: white;
+    transform: none;
+    opacity: 0.7;
+  }
+  52% {
+    transform: none;
+    opacity: 0.3;
+  }
+  55% {
+    transform: translate(-5px, -1px);
+    opacity: 0.5;
+  }
+  50% {
+    color: white;
+    transform: none;
+    opacity: 0.7;
+  }
+  72% {
+    transform: none;
+    opacity: 0.3;
+  }
+  75% {
+    color: white;
+    transform: translate(-2px, -6px);
+    opacity: 0.5;
+  }
+  80% {
+    transform: none;
+    opacity: 0.7;
+  }
+  100% {
+    color: white;
+    transform: none;
+    opacity: 0.3;
+  }
+}
+
+#player1,
+#player2 {
+  font-family: "Creepster", cursive;
+  font-size: 20px;
+  border: 3px solid red;
+  border-radius: 25px;
+  width: 40%;
+  background-color: black;
+  margin: 5px;
+  text-align: center;
+  color: white;
+}
+
+#reset {
+  font-family: "Creepster", cursive;
+  font-size: 20px;
+  opacity: .8;
+  width: 20%;
+  height: 20%;
+  color: white;
+  border-radius: 25px;
+  border: 3px solid red;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
