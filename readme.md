@@ -51,13 +51,14 @@ Adding animations
 I didn't want the questions to repeat so I used the ```splice()``` method.
 
 ### I had trouble with
-Choosing what background image would be good. I had 2 options until I decided to go with my 3rd option. I used the ```object-fit``` property because it specifies how and ```<img>``` or ```<video>``` should be resized to fit its container. I used the value ```contain``` so the image can be clipped to fit.
+Deciding what background image would fit the theme and sizing it to fit the browser.
 ```js
 body {
   /* background-image: url("https://wallpaperaccess.com/full/162342.jpg"); */
   /* background-image: url("https://i.pinimg.com/originals/40/38/81/4038814f753e6fe214a3b53f2262dab0.jpg"); */
   background-image: url("https://i.pinimg.com/originals/a6/2e/c7/a62ec7093f912a1df885fcf4d9218b58.jpg");
-  background-position: center;
-  object-fit: contain;
+  max-width:100%;
+  height:auto;
+  max-height:100%;
 }
 ```
